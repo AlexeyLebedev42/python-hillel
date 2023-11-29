@@ -6,11 +6,8 @@ def find_unique_value(some_list):
             unique.add(i)
         else:
             other.add(i)
-    # unique = set(unique)
-    # other = set(other)
 
     return unique.symmetric_difference(other).pop()
-
 
 assert find_unique_value([1, 2, 1, 1]) == 2, 'Test1'
 assert find_unique_value([2, 3, 3, 3, 5, 5]) == 2, 'Test2'
